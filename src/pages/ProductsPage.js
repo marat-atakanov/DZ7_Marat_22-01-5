@@ -13,10 +13,10 @@ export default function ProductsPage() {
         return <h3>Loading</h3>
     }
 
-
+    
     return (
         <>
-            <input style={{marginBottom: "20px"}} placeholder="Amount of products..." type="text" onChange={(e) => setAmount(e.target.value)}/>
+            <input style={{marginBottom: "20px"}} placeholder="Quantity of products..." type="text" onChange={(e) => setAmount(e.target.value)}/>
             <button onClick={() => dispatch(fetchProducts(amount))}>find</button>
 
             <ul style={{listStyleType: "none"}}>
